@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="123dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="215dp"
+        android:text="Convertir"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="113dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="215dp"
+        android:text="A Grados:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TXT_ING"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:autoText="true"
+        android:background="@android:drawable/edit_text"
+        android:ems="10"
+        android:hint="Ingresar"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:textColor="@android:color/primary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="248dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/TXT_ING"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_ING">
+
+        <RadioButton
+            android:id="@+id/C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="-2"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="C     " />
+
+        <RadioButton
+            android:id="@+id/F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="-2"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="F     " />
+
+        <RadioButton
+            android:id="@+id/R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="-2"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="R     " />
+
+        <RadioButton
+            android:id="@+id/K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="-2"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="K     " />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="76dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg">
+
+        <CheckBox
+            android:id="@+id/C_Cb"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="C" />
+
+        <CheckBox
+            android:id="@+id/F_Cb"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="F" />
+
+        <CheckBox
+            android:id="@+id/K_Cb"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="K" />
+
+        <CheckBox
+            android:id="@+id/R_Cb"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="R" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg">
+
+        <TextView
+            android:id="@+id/TXT_RES_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:enabled="false"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#313131" />
+
+        <TextView
+            android:id="@+id/TXT_RES_F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:enabled="false"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#313131" />
+
+        <TextView
+            android:id="@+id/TXT_RES_K"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:enabled="false"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#313131" />
+
+        <TextView
+            android:id="@+id/TXT_RES_R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:enabled="false"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#313131" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="64dp"
+        android:text="convertir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
